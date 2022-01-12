@@ -25,6 +25,18 @@
 		D950509A276AC308004A966E /* UserTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9505098276AC308004A966E /* UserTableViewController.xib */; };
 		D950509D276AC405004A966E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950509B276AC405004A966E /* UserTableViewCell.swift */; };
 		D950509E276AC405004A966E /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D950509C276AC405004A966E /* UserTableViewCell.xib */; };
+		D95BE1B9278DDD5B00B8EA92 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1B8278DDD5B00B8EA92 /* Theme.swift */; };
+		D95BE1BF278DE5B300B8EA92 /* DIN Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D95BE1BE278DE5B300B8EA92 /* DIN Condensed Bold.ttf */; };
+		D95BE1C1278DE6AA00B8EA92 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95BE1C0278DE6AA00B8EA92 /* Colors.xcassets */; };
+		D95BE1C4278DEB4100B8EA92 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1C3278DEB4100B8EA92 /* ThemeProtocol.swift */; };
+		D95BE1C6278DED7900B8EA92 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1C5278DED7900B8EA92 /* LightTheme.swift */; };
+		D95BE1C8278DED8C00B8EA92 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1C7278DED8C00B8EA92 /* DarkTheme.swift */; };
+		D95BE1CA278DF79900B8EA92 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1C9278DF79900B8EA92 /* ThemeViewController.swift */; };
+		D95BE1CD278F299A00B8EA92 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1CC278F299A00B8EA92 /* ConnectionDelegate.swift */; };
+		D95BE1CF278F2CF400B8EA92 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1CE278F2CF400B8EA92 /* ConnectionManager.swift */; };
+		D95BE1D2278F2DA000B8EA92 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1D1278F2DA000B8EA92 /* ServiceManager.swift */; };
+		D95BE1D4278F2E3700B8EA92 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1D3278F2E3700B8EA92 /* ApiRequest.swift */; };
+		D95BE1D6278F304F00B8EA92 /* ModelRequestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE1D5278F304F00B8EA92 /* ModelRequestUser.swift */; };
 		D9B550F0277B9D4C00F6877D /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B550EF277B9D4C00F6877D /* DrinkModel.swift */; };
 		D9B550F9277CA63600F6877D /* BackgroundCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B550F8277CA63600F6877D /* BackgroundCustomView.xib */; };
 		D9B550FB277CA69800F6877D /* BackgroundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B550FA277CA69800F6877D /* BackgroundUIView.swift */; };
@@ -53,6 +65,18 @@
 		D9505098276AC308004A966E /* UserTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewController.xib; sourceTree = "<group>"; };
 		D950509B276AC405004A966E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		D950509C276AC405004A966E /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		D95BE1B8278DDD5B00B8EA92 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D95BE1BE278DE5B300B8EA92 /* DIN Condensed Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Condensed Bold.ttf"; sourceTree = "<group>"; };
+		D95BE1C0278DE6AA00B8EA92 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D95BE1C3278DEB4100B8EA92 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		D95BE1C5278DED7900B8EA92 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		D95BE1C7278DED8C00B8EA92 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		D95BE1C9278DF79900B8EA92 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		D95BE1CC278F299A00B8EA92 /* ConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionDelegate.swift; sourceTree = "<group>"; };
+		D95BE1CE278F2CF400B8EA92 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		D95BE1D1278F2DA000B8EA92 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		D95BE1D3278F2E3700B8EA92 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		D95BE1D5278F304F00B8EA92 /* ModelRequestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRequestUser.swift; sourceTree = "<group>"; };
 		D9B550EF277B9D4C00F6877D /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 		D9B550F8277CA63600F6877D /* BackgroundCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCustomView.xib; sourceTree = "<group>"; };
 		D9B550FA277CA69800F6877D /* BackgroundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundUIView.swift; sourceTree = "<group>"; };
@@ -98,6 +122,9 @@
 		D950506A276AA340004A966E /* Revision */ = {
 			isa = PBXGroup;
 			children = (
+				D95BE1D0278F2D8200B8EA92 /* DataSource */,
+				D95BE1CB278F295F00B8EA92 /* Connection */,
+				D95BE1B7278DDD3400B8EA92 /* Resources */,
 				D90EC28827839439003A1AF1 /* Alert */,
 				D9B550F1277C94B600F6877D /* CustomView */,
 				D9505096276AC293004A966E /* InterfaceBuilder */,
@@ -111,6 +138,7 @@
 				D9505074276AA343004A966E /* Assets.xcassets */,
 				D9505076276AA343004A966E /* LaunchScreen.storyboard */,
 				D9505079276AA343004A966E /* Info.plist */,
+				D95BE1C9278DF79900B8EA92 /* ThemeViewController.swift */,
 			);
 			path = Revision;
 			sourceTree = "<group>";
@@ -153,6 +181,46 @@
 				D950509C276AC405004A966E /* UserTableViewCell.xib */,
 			);
 			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		D95BE1B7278DDD3400B8EA92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D95BE1C2278DEB2200B8EA92 /* Theme */,
+				D95BE1BE278DE5B300B8EA92 /* DIN Condensed Bold.ttf */,
+				D95BE1C0278DE6AA00B8EA92 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D95BE1C2278DEB2200B8EA92 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D95BE1B8278DDD5B00B8EA92 /* Theme.swift */,
+				D95BE1C3278DEB4100B8EA92 /* ThemeProtocol.swift */,
+				D95BE1C5278DED7900B8EA92 /* LightTheme.swift */,
+				D95BE1C7278DED8C00B8EA92 /* DarkTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		D95BE1CB278F295F00B8EA92 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				D95BE1CC278F299A00B8EA92 /* ConnectionDelegate.swift */,
+				D95BE1CE278F2CF400B8EA92 /* ConnectionManager.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		D95BE1D0278F2D8200B8EA92 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D95BE1D1278F2DA000B8EA92 /* ServiceManager.swift */,
+				D95BE1D3278F2E3700B8EA92 /* ApiRequest.swift */,
+				D95BE1D5278F304F00B8EA92 /* ModelRequestUser.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		D9B550F1277C94B600F6877D /* CustomView */ = {
@@ -228,6 +296,8 @@
 				D9505075276AA343004A966E /* Assets.xcassets in Resources */,
 				D950509A276AC308004A966E /* UserTableViewController.xib in Resources */,
 				D9B550FF277CA99900F6877D /* CustomViewController.xib in Resources */,
+				D95BE1BF278DE5B300B8EA92 /* DIN Condensed Bold.ttf in Resources */,
+				D95BE1C1278DE6AA00B8EA92 /* Colors.xcassets in Resources */,
 				D9505073276AA340004A966E /* Main.storyboard in Resources */,
 				D950509E276AC405004A966E /* UserTableViewCell.xib in Resources */,
 				D950508F276AB4D6004A966E /* CollectionView.storyboard in Resources */,
@@ -244,18 +314,28 @@
 			files = (
 				D9505099276AC308004A966E /* UserTableViewController.swift in Sources */,
 				D9B550FE277CA99900F6877D /* CustomViewController.swift in Sources */,
+				D95BE1C8278DED8C00B8EA92 /* DarkTheme.swift in Sources */,
+				D95BE1D2278F2DA000B8EA92 /* ServiceManager.swift in Sources */,
 				D9505070276AA340004A966E /* HomeViewController.swift in Sources */,
 				D90EC28A27839459003A1AF1 /* AlertDialog.swift in Sources */,
+				D95BE1C6278DED7900B8EA92 /* LightTheme.swift in Sources */,
 				D950509D276AC405004A966E /* UserTableViewCell.swift in Sources */,
 				D950506C276AA340004A966E /* AppDelegate.swift in Sources */,
 				D9505081276AB02D004A966E /* UserListViewController.swift in Sources */,
+				D95BE1CF278F2CF400B8EA92 /* ConnectionManager.swift in Sources */,
 				D950506E276AA340004A966E /* SceneDelegate.swift in Sources */,
+				D95BE1CA278DF79900B8EA92 /* ThemeViewController.swift in Sources */,
 				D9505091276AB69F004A966E /* CollectionViewController.swift in Sources */,
+				D95BE1D4278F2E3700B8EA92 /* ApiRequest.swift in Sources */,
+				D95BE1B9278DDD5B00B8EA92 /* Theme.swift in Sources */,
 				D9B550FB277CA69800F6877D /* BackgroundUIView.swift in Sources */,
 				D9B550F0277B9D4C00F6877D /* DrinkModel.swift in Sources */,
 				D9505086276AB102004A966E /* CustomCell.swift in Sources */,
 				D9505088276AB129004A966E /* HeaderSectionCell.swift in Sources */,
 				D9505095276AB84E004A966E /* DataCollectionViewCell.swift in Sources */,
+				D95BE1CD278F299A00B8EA92 /* ConnectionDelegate.swift in Sources */,
+				D95BE1C4278DEB4100B8EA92 /* ThemeProtocol.swift in Sources */,
+				D95BE1D6278F304F00B8EA92 /* ModelRequestUser.swift in Sources */,
 				D9505084276AB04F004A966E /* UserModel.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

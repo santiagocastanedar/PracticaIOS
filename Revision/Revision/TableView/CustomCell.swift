@@ -69,10 +69,11 @@ class CustomCell: UITableViewCell {
         
     }
     
-    func setData(_ user : UserModel){
-        profilePic.image = UIImage(named: user.profilePic)
-        descriptionLabel.text = user.description
-        userNameLabel.text = user.userName
+    func setData(with user : User){
+        profilePic.image = UIImage(named: "isaac-hunt")
+        descriptionLabel.text = user.email + " - " + user.phone
+        userNameLabel.text = user.name
+        
     }
     
 }

@@ -17,7 +17,7 @@ class AlertDialog {
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(_:UIAlertAction!) in
         
-            viewController.users.remove(at: index.row)
+            viewController.result.remove(at: index.row)
             viewController.tableView.deleteRows(at: [index], with: .fade)
             
             
@@ -30,7 +30,7 @@ class AlertDialog {
             print("Click Aprove")
         }))
         alert.addAction(UIAlertAction(title: "Salir", style: .destructive, handler: {(_) in
-            viewController.users.remove(at: index.row)
+            viewController.result.remove(at: index.row)
             viewController.tableView.deleteRows(at: [index], with: .fade)
         }))
     
@@ -41,13 +41,19 @@ class AlertDialog {
         viewController.present(alert, animated: true, completion: nil)
     }
     func showAlert(name:String, index: IndexPath,viewController: UserListViewCrontroller) {
-        switch name.first {
-        case "I":
+        
+        if (name.first == "C") {
             showSimpleAlert(text: name, index: index, viewController: viewController)
-        case "H":
+        } else {
             showSimpleActionSheet(text: name, index: index, viewController: viewController)
-        default:
-            print(name)
         }
+//        switch name.first {
+//        case "C":
+//            showSimpleAlert(text: name, index: index, viewController: viewController)
+//        case "H":
+//            showSimpleActionSheet(text: name, index: index, viewController: viewController)
+//        default:
+//            print(name)
+//        }
     }
 }

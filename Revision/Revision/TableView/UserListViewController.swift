@@ -8,7 +8,8 @@
 import UIKit
 
 class UserListViewCrontroller: UIViewController{
-    var users:[UserModel] = []
+    private let connectionManager = ConnectionManager()
+    var result = Array<User>()
     lazy var tableView : UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -24,7 +25,8 @@ class UserListViewCrontroller: UIViewController{
         super.viewDidLoad()
         view.backgroundColor = .white
         configureView()
-        users = UserModel.getList()
+        connectionManager.setViewDelegate(connectionDelegate: self)
+        connectionManager.loadCatalogueElements(with: urlUsers)
         tableView.reloadData()
     }
     
@@ -48,22 +50,22 @@ class UserListViewCrontroller: UIViewController{
 
 extension UserListViewCrontroller : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return result.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(CustomCell.self)", for: indexPath) as? CustomCell else {
             return UITableViewCell()
         }
-        let user = users[indexPath.row]
-        cell.setData(user)
+        let user = result[indexPath.row]
+        cell.setData(with: user)
         cell.accessoryType = .detailButton
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let customAlert = AlertDialog()
-        customAlert.showAlert(name: users[indexPath.row].userName, index: indexPath, viewController: self)
+        customAlert.showAlert(name: result[indexPath.row].name, index: indexPath, viewController: self)
         
     }
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
@@ -74,7 +76,7 @@ extension UserListViewCrontroller : UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             tableView.beginUpdates()
             
-            users.remove(at: indexPath.row)
+            result.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .middle)
             
             tableView.endUpdates()
@@ -92,6 +94,15 @@ extension UserListViewCrontroller : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
     }
+}
+
+extension UserListViewCrontroller : ConnectionDelegate {
+    func displayUsersResult(_ elements: [User]?) {
+        self.result = elements ?? Array<User>()
+        self.tableView.reloadData()
+    }
+    
+    
 }
 
 /*extension UserListViewCrontroller{
